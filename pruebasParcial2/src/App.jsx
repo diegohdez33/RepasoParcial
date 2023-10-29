@@ -1,8 +1,11 @@
+import QuestionPage from "./assets/components/QuestionPage/QuestionPage";
 
 function App() {
 
   return (
-    <h1>Hola Mundo</h1>
+    <>
+      <QuestionPage/>
+    </>
   );
 }
 
