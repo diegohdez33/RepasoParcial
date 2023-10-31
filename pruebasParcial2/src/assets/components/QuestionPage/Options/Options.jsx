@@ -1,9 +1,10 @@
 
-const Options = ({data={}}) => {
-  
-  const shuffle = (array=[]) => { //genera un orden aleatorio en un array
-    return array.sort(() => Math.random() - 0.5); 
-  }; 
+
+const shuffle = (array=[]) => { //genera un orden aleatorio en un array
+  return array.sort(() => Math.random() - 0.5); 
+}; 
+
+const Options = ({ data={} }) => {
   
   const answers = [...data.incorrect_answers, data.correct_answer];
   const shuffledAnswers = shuffle(answers);
@@ -18,7 +19,7 @@ const Options = ({data={}}) => {
       } else {
         e.target.style.backgroundColor = "rgb(239 68 68)";
         canChoose = !canChoose;
-      }
+      } 
     }
   }
 
@@ -30,7 +31,7 @@ const Options = ({data={}}) => {
           return (
             <button 
               key={Math.random} 
-              className="text-black w-64 h-24 bg-white rounded-lg flex justify-center items-center m-4 hover:cursor-pointer hover:bg-cyan-300"
+              className="text-black font-bold w-64 h-24 bg-white rounded-lg flex justify-center items-center m-4 hover:cursor-pointer hover:bg-cyan-300"
               value={r}
               onClick={onClickHandler}
             >

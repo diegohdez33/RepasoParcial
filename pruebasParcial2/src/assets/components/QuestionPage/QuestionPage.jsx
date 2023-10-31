@@ -17,7 +17,7 @@ const data = {
 const QuestionPage = () => {
 
   return (
-    <section className="w-full min-h-screen p-10 flex flex-col justify-center items-center gap-8">
+    <section className="w-full h-screen p-10 flex flex-col justify-center items-center gap-8">
       <Question data={data}/>
       <Options data={data}/>
     </section>
