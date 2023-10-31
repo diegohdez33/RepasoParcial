@@ -1,8 +1,12 @@
+import { Search } from "./assets/components/search/Search";
+
 
 function App() {
 
   return (
-      <h1>Hola Mundo</h1>
+      <>
+        <Search/>
+      </>
   );
 }
 
